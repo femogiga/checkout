@@ -160,18 +160,14 @@ fieldset input {
     padding: .7rem;
 }
 
-select {
-    padding: .7rem 1.5rem;
-    width: 100%;
 
-}
 
 ::placeholder {
     font-size: 13px;
 }
 
 .fa-paper-plane {
-    margin-right: 1rem;
+    margin-right: 1.7rem;
 }
 
 
@@ -222,7 +218,21 @@ h6 {
 }
 
 select {
-    text-indent: .3rem;
+    width: 100%;
+    text-indent: 1rem;
+    padding: .7rem;
+}
+
+#select-cont {
+    width: 100%;
+}
+
+#select-cont-two {
+    width: 100%;
+}
+
+fieldset-three input {
+    width: 100%;
 }
 
 
