@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="wrapper ">
+            <header class="container">
+                <h1>Checkout</h1>
+            </header>
+
+            <main>
+                <section class="container flow">
+                    <div class="card-cont flex">
+                        <picture>
+                            <img src="./checkout/photo1.png" class="radius" alt="">
+                        </picture>
+                        <article class="card-text-cont flex">
+                            <div>
+                                <div>
+                                    <h3>Vintage Backbag</h3>
+                                    <div class="flex">
+                                        <p class="clr-orange bold">$54.99</p>
+                                        <p class="strike">$94.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rel-cont">
+                                <div class="flex cart-input radius">
+                                    <button>-</button>
+                                    <p class="bold">1</p>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <div class="card-cont flex flow">
+                        <picture>
+                            <img src="./checkout/photo2.png" class="radius" alt="">
+                        </picture>
+                        <article class="card-text-cont flex">
+                            <div>
+                                <div>
+                                    <h3>Levi Shoes</h3>
+                                    <div class="flex">
+                                        <p class="clr-orange bold">$54.99</p>
+                                        <p class="strike">$94.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rel-cont">
+                                <div class="flex cart-input radius">
+                                    <button>-</button>
+                                    <p class="bold">1</p>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="card-cont bold1">
+                    <hr class="flow">
+                    <div class="flex space-between pad-block bold">
+                        <p>Shipping</p>
+                        <p>$19</p>
+                    </div>
+
+                    <hr>
+                    <div class="flex space-between pad-block bold">
+                        <p class="">Total</p>
+                        <p>$148.98</p>
+                    </div>
+                </section>
+                <section class="card-cont flow">
+                    <form>
+                        <div>
+                            <h3>Contact information</h3>
+                            <fieldset>
+                                <div>
+                                    <p class="fs200 bold">E-mail</p>
+                                    <div class="icon-cont">
+                                        <input type="text" class="radius" placeholder="      Enter your email...">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <p class="fs200 bold">Phone</p>
+                                    <div class="icon-cont">
+                                        <input type="text" class="radius" placeholder="      Enter your phone...">
+
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                        </div>
+
+
+                        <div class="flow">
+                            <h3>Shipping address</h3>
+                            <fieldset>
+                                <div>
+                                    <p class="fs200 bold">Full name</p>
+                                    <div class="icon-cont">
+                                        <input type="text" class="radius" placeholder="      Rodney Cotton...">
+                                        <i class="fa-solid fa-circle-user"></i>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <p class="fs200 bold">Address</p>
+                                    <div class="icon-cont">
+                                        <input type="text" class="radius" placeholder="      Your address...">
+
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <p class="fs200 bold">City</p>
+                                    <div class="icon-cont">
+                                        <input type="text" class="radius" placeholder="      Your city...">
+
+                                        <i class="fa-solid fa-city"></i>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <div class="flex">
+                                        <div>
+                                            <p class="fs200 bold">Country</p>
+                                            <div class="icon-cont">
+                                                <select class="radius">
+                                                    <option disabled selected>Your country....</option>
+                                                    <option value="United State">USA</option>
+                                                    <option value="Brazil">Brazil</option>
+                                                    <option value="Ghana">Ghana</option>
+                                                    <option value="Japan">Japan</option>
+                                                    <option value="Ghana">UK</option>
+                                                </select>
+                                                <i class="fa-solid fa-city"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="fs200 bold">Postal code</p>
+                                            <div class="icon-cont">
+                                                <input type="text" class="radius" placeholder="     Your postal code..">
+                                                <i class="fa-solid fa-paper-plane"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset class="flex flow icon-cont" id="fieldset-three">
+                                <div>
+                                    <input type="checkbox" id='check'>
+                                </div>
+                                <h6 class="flex">Save this information for next time</h6>
+
+                            </fieldset>
+
+                        </div>
+
+
+                        <fieldset class="flex flow" id='fieldset-four'>
+                            <button id="submit" class="radius bold">Continue</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+    </body>
+
+</html>
