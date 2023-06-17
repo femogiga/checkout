@@ -26,14 +26,18 @@
 body {
     line-height: 1.5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: var(--fs-400);
-    padding-block: 3rem;
+    font-size: var(--fs-300);
+    padding-block: 2rem 1rem;
+    margin-inline: auto;
+    max-width: 70em;
+
 }
 
 /* img presets */
 img,
 picture {
     max-inline-size: 100%;
+    object-fit: contain;
 }
 
 fieldset {
@@ -48,19 +52,26 @@ input {
 }
 
 .fs200 {
-    font-size: var(--fs-300)
+    font-size: var(--fs-300);
+}
+
+.fs100{
+    font-size: var(--fs-200);
 }
 
 
 .wrapper {
-    width: 99%;
+    width: 98%;
     margin: 0 auto;
 }
 
 .container {
 
-    padding-inline: .4rem;
+    padding-inline: .3rem;
     margin: 0 auto;
+}
+main{
+    padding:1.8rem
 }
 
 /* utility classes */
@@ -95,7 +106,7 @@ input {
 }
 
 .pad-1 {
-    padding-inline: 1rem;
+    padding-inline: .8rem;
 }
 
 .pad-block {
@@ -107,8 +118,9 @@ input {
 }
 
 .card-cont {
-    width: 22.5rem;
-    padding: 0 1rem;
+    /* width: 22.5rem; */
+    padding: 0 .5rem;
+    margin-inline: auto;
 
 }
 
@@ -149,6 +161,18 @@ picture>img {
 
 }
 
+#cart-section {
+
+    width:40%;
+    min-width:348.17px;
+}
+
+#form-section{
+    margin:0 auto;
+
+}
+
+
 
 .clr-orange {
     color: hsl(var(--color-orange))
@@ -158,7 +182,9 @@ picture>img {
 fieldset input {
     width: 100%;
     padding: .7rem;
+ max-width:348.17px;
 }
+
 
 
 
@@ -175,7 +201,16 @@ fieldset input {
 
 
 
+form{
+    width:70%;
+    max-width:100%;
+    min-width:300px;
 
+}
+
+form input{
+    margin-bottom: .5rem;
+}
 
 fieldset>div {
     margin-top: .3rem;
@@ -194,7 +229,7 @@ fieldset>div {
 
 #check {
     display: block;
-    background-color: bisque;
+
     width: 19px;
     height: 19px;
 }
@@ -223,8 +258,18 @@ select {
     padding: .7rem;
 }
 
+option:first-child {
+    color: rgb(0, 0, 0, 7)
+}
+
 #select-cont {
     width: 100%;
+}
+
+#select-cont-two input{
+    width: 100%;
+    padding: .7rem;
+ max-width:348.17px;
 }
 
 #select-cont-two {
@@ -233,6 +278,52 @@ select {
 
 fieldset-three input {
     width: 100%;
+    max-width:142px;
+}
+
+
+
+
+@media screen and (min-width:800px) {
+    main {
+        display: flex;
+         justify-content: space-between;
+        gap:2rem;
+        margin: 0 auto;
+
+    }
+
+    body {
+
+
+
+        padding-block: 2rem 3rem;
+
+
+
+    }
+
+
+    #cart-section {
+        order: 1;
+        /* width:40%; */
+        /* min-width:348.17px; */
+        width:340.17px;
+    }
+
+    #form-section {
+        width:50%;
+
+    }
+    form{
+        width:60%;
+
+    }
+
+    form input{
+        margin-bottom: 1rem;
+    }
+
 }
 
 
